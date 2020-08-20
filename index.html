@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Belote</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="belote.js"></script>
+    <style>
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+      }
+
+      li {
+        float: left;
+      }
+
+      li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+
+      li a:hover {
+        background-color: #111;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <ul class="tabs">
+        <li><a href="javascript:init();" id="tab_1" class="active">Inscription</a></li>
+        <li><a href="javascript:loadTables();" id="tab_3">Tables</a></li>
+        <li><a href="javascript:loadResults();" id="tab_2">Résultats</a></li>
+      </ul>
+    </div>
+    <div id="belote"></div>
+  </body>
+</html>
